@@ -61,4 +61,17 @@ public void Test(string[] args)
     // ...
 }
 ```
+### Final: Run the application
+Now we have our application with some commands. We only need to run it. Do that:
+```cs
+// 1.
+AppRunner.Run<MyApplication>("testcommand", new string[] {"hello", "world=true"});
+// 2.
+AppRunner.Run(typeof(MyApplication), "testcommand", new string[] {"hello", "world=true"});
 
+// Default Command
+AppRunner.Run<MyApplication>(null, new string[] {"hello", "world=true"});
+
+// No Arguments
+AppRunner.Run<MyApplication>("testcommand", Array.Empty<string>());
+```
