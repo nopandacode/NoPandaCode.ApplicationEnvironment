@@ -1,5 +1,5 @@
 # NoPandaCode.ApplicationEnvironment
-This is a package with some application helpers.
+This is a library with some application helpers.
 
 * [AppRunner](#AppRunner)
 
